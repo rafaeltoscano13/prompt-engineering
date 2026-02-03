@@ -175,7 +175,10 @@ Resultados das execuções dos prompts contra os exemplos de teste estão em `re
 - `resultados/README.md` — Resumo das execuções e links para os arquivos de evidência.
 - `resultados/*.jpg` — Placeholders para screenshots de cada execução (substitua por imagens reais se desejar).
 
-Nome usado neste entregável: **Marcio Moreira FIlho**
+- **Data**: Fevereiro 2026
+- **Versão**: 1.0
+- **Autor**: Rafael Antonio Toscano
+- **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
 
 
 ---
