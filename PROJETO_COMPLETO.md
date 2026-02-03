@@ -265,6 +265,10 @@ Este trabalho contribui para:
 
 ---
 
-**🎉 PROJETO ENTREGUE E PRONTO!**
+- **Data**: Fevereiro 2026
+- **Versão**: 1.0
+- **Status**: ✅ Finalizado para Apresentação de MBA
+- **Autor**: Rafael Antonio Toscano
+- **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
 
 Comece por: `README.md` ou `LEIA_PRIMEIRO.txt`
