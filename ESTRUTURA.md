@@ -187,7 +187,6 @@ Para aprofundamento:
 
 - **Data**: Fevereiro 2026
 - **Versão**: 1.0
-- **Status**: ✅ Finalizado para Apresentação de MBA
 - **Autor**: Rafael Antonio Toscano
 - **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
 
