@@ -226,11 +226,11 @@ Este projeto de MBA demonstra com sucesso:
 
 ## 📚 Versão do Documento
 
-- **Data**: Janeiro 2026
+- **Data**: Fevereiro 2026
 - **Versão**: 1.0
 - **Status**: ✅ Finalizado para Apresentação de MBA
-- **Autor**: Marcio M. Filho
-- **Instituição**: [Sua Universidade/MBA]
+- **Autor**: Rafael Antonio Toscano
+- **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
 
 ---
 
