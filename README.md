@@ -154,14 +154,15 @@ Este trabalho contribui para:
 ---
 
 ## 📝 Versão
-**v1.0** - Janeiro 2026
+**v1.0** - Fevereiro 2026
 
 ---
 
 ## 📧 Contato
-**Autor**: Marcio M. Filho  
-**MBA**: Arquitetura de Soluções em Cloud Computing  
-**Universidade**: [Instituição]
+- **Data**: Fevereiro 2026
+- **Versão**: 1.0
+- **Autor**: Rafael Antonio Toscano
+- **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
 
 ## ENTREGÁVEL
 
@@ -174,12 +175,6 @@ Seguem os artefatos gerados para documentação final do projeto (entregável so
 Resultados das execuções dos prompts contra os exemplos de teste estão em `resultados/`.
 - `resultados/README.md` — Resumo das execuções e links para os arquivos de evidência.
 - `resultados/*.jpg` — Placeholders para screenshots de cada execução (substitua por imagens reais se desejar).
-
-- **Data**: Fevereiro 2026
-- **Versão**: 1.0
-- **Autor**: Rafael Antonio Toscano
-- **Instituição**: [IMPACTA - MBA CLC & DevOps_14]
-
 
 ---
 
