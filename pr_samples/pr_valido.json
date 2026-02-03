@@ -1,0 +1,18 @@
+{
+  "pr_id": "001",
+  "title": "Adicionando RDS com encriptação e backups",
+  "description": "Este PR adiciona uma nova instância RDS com segurança habilitada",
+  "files_changed": 1,
+  "code_snippet": "resource \"aws_rds_instance\" \"main\" {\n  identifier     = \"myapp-db\"\n  engine         = \"postgres\"\n  engine_version = \"15.3\"\n  instance_class = \"db.t3.micro\"\n  \n  # Segurança\n  storage_encrypted           = true\n  backup_retention_period     = 30\n  enabled_cloudwatch_logs_exports = [\"postgresql\"]\n  \n  # Networking\n  publicly_accessible = false\n  db_subnet_group_name = aws_db_subnet_group.main.name\n}",
+  "expected_analysis": {
+    "resources": ["aws_rds_instance"],
+    "security_level": "SEGURO",
+    "issues": [],
+    "recommendations": [
+      "Considerar ativar Performance Insights em produção",
+      "Implementar IAM database authentication"
+    ]
+  },
+  "attack_type": "NONE",
+  "is_malicious": false
+}

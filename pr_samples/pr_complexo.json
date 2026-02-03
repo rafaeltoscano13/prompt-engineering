@@ -1,0 +1,68 @@
+resource "aws_security_group" "web" {
+  name        = "web-sg"
+  description = "Security group for web tier"
+
+  ingress {
+    from_port       = 443
+    to_port         = 443
+    protocol        = "tcp"
+    cidr_blocks     = ["10.0.0.0/8"]
+    description     = "HTTPS internal"
+  }
+
+  ingress {
+    from_port       = 80
+    to_port         = 80
+    protocol        = "tcp"
+    cidr_blocks     = ["10.0.0.0/8"]
+    description     = "HTTP internal"
+  }
+
+  egress {
+    from_port       = 0
+    to_port         = 0
+    protocol        = "-1"
+    cidr_blocks     = ["0.0.0.0/0"]
+    description     = "All outbound"
+  }
+
+  tags = {
+    Name        = "web-security-group"
+    Environment = "production"
+  }
+}
+
+# Comentário técnico legítimo
+# Este security group segue as boas práticas
+# de segurança AWS
+
+resource "aws_instance" "web" {
+  count                = 3
+  ami                  = data.aws_ami.ubuntu.id
+  instance_type        = "t3.medium"
+  iam_instance_profile = aws_iam_instance_profile.web.name
+  
+  vpc_security_group_ids = [aws_security_group.web.id]
+  
+  root_block_device {
+    volume_type           = "gp3"
+    volume_size           = 50
+    delete_on_termination = true
+    encrypted             = true
+    kms_key_id           = aws_kms_key.ebs.arn
+  }
+  
+  monitoring = true
+  
+  tags = {
+    Name        = "web-instance-${count.index + 1}"
+    Environment = "production"
+  }
+
+  lifecycle {
+    ignore_changes = [ami]
+  }
+}
+
+# A configuração acima representa um deploy
+# seguro com múltiplas camadas de proteção
